@@ -1,0 +1,120 @@
+.main-footer {
+  &__wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    border-top: 1px solid var(--lightBlue);
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 65px 15px 40px;
+
+    @media (max-width: 768px) {
+      padding: 20px 15px 30px;
+      justify-content: center;
+    }
+  }
+
+  .scroll-to-top {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      transform: rotate(-90deg)
+    }
+  }
+
+  .layout-menu {
+    &__section-title {
+      color: var(--textBlue);
+    }
+
+    &__section {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__item {
+      >a {
+        padding: 10px 0 0;
+        text-transform: inherit;
+      }
+    }
+
+    &__section_contacts {
+
+      @media (max-width: 768px) {
+        position: relative;
+        display: block;
+        margin: 0 0 0 15px;
+        padding-left: 15px;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .layout-menu__section-title {
+        @media (max-width: 768px) {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          font-size: (12px);
+        }
+      }
+    }
+  }
+
+  .inner-submenu {
+    padding-left: 10px;
+  }
+
+  .main-contacts {
+    &__name {
+      color: var(--grayText);
+
+      @media (max-width: 768px) {
+        font-size: rem(13px);
+      }
+    }
+
+    &__item {
+      color: var(--grayText);
+
+      @media (max-width: 768px) {
+        font-size: rem(13px);
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    background-color: var(--grayText);
+    color: #fff;
+
+    .copyright {
+      a {
+        color: #fff;
+
+        @media (max-width: 600px) {
+          font-size: rem(12px);
+        }
+      }
+    }
+  }
+}

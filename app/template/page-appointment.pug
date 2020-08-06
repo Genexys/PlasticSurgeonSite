@@ -1,0 +1,45 @@
+.page-appointment 
+  .appointment-block  
+    .section-title.section-title_small.appointment-block__title Укажите контактные данные
+    .appointment-block__descr Администратор свяжется с вами для уточнения удобного времени
+    form.appointment-form(action="")
+      .appointment-form__field.appointment-form__field_name
+        input(type="text").appointment-form__input
+        label.appointment-form__label Имя
+      .appointment-form__field.appointment-form__field_phone
+        input(type="tel").appointment-form__input
+        label.appointment-form__label Телефон
+      .appointment-form__field.appointment-form__field_descr
+        p Даю согласие на обработку моих персональных данных
+      .appointment-form__field
+        button(type="submit").main-btn.main-btn_with-icon.appointment-form__btn записаться на приём
+
+  .page-appointment__bottom
+    .page-appointment__descr
+      p.section-title.section-title_small.page-appointment__title  Где ведётся приём?
+      p.page-appointment__content 
+        |Приём ведётся в клиника 
+        span «Шале Сантэ» 
+        |по адресу:
+        br
+        |г. Краснодар,ул. Красных Партизан, д. 238,
+        br
+        |+7 (861) 215 66 10
+
+    .page-appointment__descr
+      .page-appointment__title 
+        p.section-title.section-title_small
+          |Есть вопрос?
+        a(href="").page-appointment__link 
+          span посмотреть частые вопросы
+          .btn-arrow
+            .btn-arrow__dots
+              i
+              i
+              i
+      p.page-appointment__content 
+        |Можно записаться на приём у администратора, 
+        br
+        |Также она ответит на ваши вопросы по телефону:
+        br
+        span +7 918 157 83 46

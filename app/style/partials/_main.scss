@@ -1,0 +1,26 @@
+@import "base/normalize";
+
+@import "var";
+@import "mixins";
+@import "base/fonts";
+@import "base/base";
+
+@import "sections/header";
+@import "sections/main-banner";
+@import "sections/main-page";
+@import "sections/page-about-doctor";
+@import "sections/page-reviews";
+@import "sections/page-news";
+@import "sections/page-privacy";
+@import "sections/page-price";
+@import "sections/page-surgery-list";
+@import "sections/page-surgery-list-details";
+@import "sections/page-surgery";
+@import "sections/page-appointment";
+@import "sections/page-qa";
+@import "sections/page-result-gallery";
+@import "sections/page-contacts";
+@import "sections/page-search-result";
+@import "sections/footer";
+
+@import "media";

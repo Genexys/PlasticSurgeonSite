@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="stage-4" transform="translate(-1036.354 -3109)">
+    <g id="statoscope" transform="translate(1072.081 3133.684)">
+      <path id="Path_203" data-name="Path 203" d="M-169.76-86.894h-4.867v14.016a17.409,17.409,0,0,0,16.9,17.4c.24.007.482.012.726.015a17.3,17.3,0,0,0,17.3-17.405V-86.894h-4.859" transform="translate(174.627 90.694)" fill="none" stroke="#014f80" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_204" data-name="Path 204" d="M-160.54-61.612l3.082,6.19a4.87,4.87,0,0,1-1.308,5.936h0a4.9,4.9,0,0,0,.088,7.69l2.907,2.454" transform="translate(178.045 96.848)" fill="none" stroke="#014f80" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_289" data-name="Ellipse 289" cx="7.05" cy="7.05" r="7.05" transform="translate(22.275 50.433)" stroke-width="2" stroke="#014f80" stroke-linecap="round" stroke-linejoin="round" fill="#014f80"/>
+      <circle id="Ellipse_290" data-name="Ellipse 290" cx="3.8" cy="3.8" r="3.8" transform="translate(4.866)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_291" data-name="Ellipse 291" cx="3.8" cy="3.8" r="3.8" transform="translate(22.466)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="Group_334" data-name="Group 334" transform="translate(1036.354 3109)">
+      <g id="Ellipse_284" data-name="Ellipse 284" fill="none" stroke="#014f80" stroke-width="4">
+        <circle cx="55" cy="55" r="55" stroke="none"/>
+        <circle cx="55" cy="55" r="53" fill="none"/>
+      </g>
+      <g id="Ellipse_292" data-name="Ellipse 292" transform="translate(11 11)" fill="none" stroke="#014f80" stroke-width="1">
+        <circle cx="44" cy="44" r="44" stroke="none"/>
+        <circle cx="44" cy="44" r="43.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

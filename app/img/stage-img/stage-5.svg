@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="stage-5" transform="translate(-1337.104 -3109)">
+    <g id="star" transform="translate(1357.82 3131.964)">
+      <g id="Group_327" data-name="Group 327">
+        <path id="Path_210" data-name="Path 210" d="M-62.684-368.439l6.329,11.111,12.523,2.586-8.612,9.453,1.41,12.709-11.652-5.269-11.652,5.269,1.41-12.709-8.612-9.453,12.523-2.586Z" transform="translate(97.5 380.868)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_26" data-name="Line 26" y1="6.45" transform="translate(34.816)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_27" data-name="Line 27" x1="6.135" y1="1.993" transform="translate(4.143 22.285)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_28" data-name="Line 28" x1="3.791" y2="5.218" transform="translate(15.859 53.125)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_29" data-name="Line 29" x2="3.791" y2="5.218" transform="translate(49.981 53.125)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_30" data-name="Line 30" y1="1.993" x2="6.135" transform="translate(59.354 22.285)" fill="none" stroke="#014f80" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_215" data-name="Path 215" d="M8.6,0" transform="translate(56.316 38.702)" fill="none" stroke="#014f80" stroke-width="2"/>
+        <path id="Path_214" data-name="Path 214" d="M8.6,0" transform="translate(4.714 43.002)" fill="none" stroke="#014f80" stroke-width="2"/>
+        <line id="Line_37" data-name="Line 37" y2="4.3" transform="translate(14.465 5.6)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_38" data-name="Line 38" x1="4.3" transform="translate(12.315 7.75)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_39" data-name="Line 39" y2="4.3" transform="translate(36.966 60.752)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_40" data-name="Line 40" x1="4.3" transform="translate(34.816 62.902)" fill="none" stroke="#014f80" stroke-miterlimit="10" stroke-width="2"/>
+        <g id="Heart" transform="translate(48.889 4.453)">
+          <path id="Heart-2" data-name="Heart" d="M8.43.755a2.455,2.455,0,0,0-3.494,0L4.593,1.1,4.249.755A2.471,2.471,0,0,0,.755,4.249L4.593,8.087,8.43,4.249a2.455,2.455,0,0,0,0-3.494" transform="translate(-0.025 -0.025)" fill="#014f80" fill-rule="evenodd"/>
+        </g>
+        <g id="Heart-3" data-name="Heart" transform="translate(0 39.551)">
+          <path id="Heart-4" data-name="Heart" d="M8.226.738a2.4,2.4,0,0,0-3.409,0l-.335.335L4.147.738A2.411,2.411,0,0,0,.738,4.147L4.482,7.891,8.226,4.147a2.4,2.4,0,0,0,0-3.409" transform="translate(-0.025 -0.025)" fill="#014f80" fill-rule="evenodd"/>
+        </g>
+        <g id="Heart-5" data-name="Heart" transform="translate(58.025 37.572)">
+          <path id="Heart-6" data-name="Heart" d="M8.181.734a2.382,2.382,0,0,0-3.39,0l-.333.333L4.124.734a2.4,2.4,0,0,0-3.39,3.39L4.457,7.847,8.181,4.124a2.382,2.382,0,0,0,0-3.39" transform="translate(-0.025 -0.025)" fill="#014f80" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_335" data-name="Group 335" transform="translate(1337.104 3109)">
+      <g id="Ellipse_284" data-name="Ellipse 284" fill="none" stroke="#014f80" stroke-width="4">
+        <circle cx="55" cy="55" r="55" stroke="none"/>
+        <circle cx="55" cy="55" r="53" fill="none"/>
+      </g>
+      <g id="Ellipse_292" data-name="Ellipse 292" transform="translate(11 11)" fill="none" stroke="#014f80" stroke-width="1">
+        <circle cx="44" cy="44" r="44" stroke="none"/>
+        <circle cx="44" cy="44" r="43.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

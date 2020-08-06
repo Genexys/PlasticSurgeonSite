@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.418" height="18.417" viewBox="0 0 18.418 18.417">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="18.417" height="18.417" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico-arrow-circle-white" clip-path="url(#clip-path)">
+    <path id="Path_199" data-name="Path 199" d="M9.208,0a9.208,9.208,0,1,0,9.208,9.208A9.208,9.208,0,0,0,9.208,0Z" fill="#57a2e2"/>
+    <g id="Symbol_89" data-name="Symbol 89" transform="translate(5.36 4.915)">
+      <path id="Path_10" data-name="Path 10" d="M4.17,8.34l-.758-.758,2.87-2.87H0V3.628H6.282L3.412.758,4.17,0,8.34,4.17Z" transform="translate(0 0)" fill="#f1f9ff"/>
+    </g>
+  </g>
+</svg>

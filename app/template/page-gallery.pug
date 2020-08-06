@@ -1,0 +1,38 @@
+.page-result-gallery
+  ._wrapper
+    ._inner
+      ._switch-block
+        h1.section-title.section-title_small Часто задаваемые вопросы по темам:
+        ._switcher.switcher-review
+          each val in ['Увеличение груди', 'Пластика живота', 'Липосакция', 'Пластика лица', 'Пластика носа', 'Пластика губ', 'Пластика ушей']
+            .switcher-review__item
+              .btn-arrow.switcher-review__btn
+                .btn-arrow__dots
+                  i
+                  i
+                  i
+              a(href="").switcher-review__link= val
+        .page-result-gallery__inst
+          p.page-result-gallery__inst-title Свежие фото выполненных работ:
+          a(href="").page-result-gallery__link karpyuk_plastic_surgeon
+    ._wrapper-gallery
+      .result-gallery
+        ul.result-gallery__list
+          each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+            li.result-gallery__item
+              figure.result-gallery__img
+                a(href="img/img-video.jpg", data-fancybox="gallery")
+                  img(src="img/img-video.jpg", alt="")
+                figcaption.result-gallery__caption 
+                  .result-gallery__caption-title Dolor Sitamet
+                  .result-gallery__caption-descr Dolor Sitamet
+              figure.result-gallery__img
+                a(href="img/img-video.jpg", data-fancybox="gallery")
+                  img(src="img/img-video.jpg", alt="")
+                figcaption.result-gallery__caption 
+                  .result-gallery__caption-title Dolor Sitamet
+                  .result-gallery__caption-descr Dolor Sitamet
+                  
+      .page-result-gallery__inst
+        p.page-result-gallery__inst-title Свежие фото выполненных работ:
+        a(href="").page-result-gallery__link karpyuk_plastic_surgeon

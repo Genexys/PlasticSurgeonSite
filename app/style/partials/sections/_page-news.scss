@@ -1,0 +1,31 @@
+.page-news {
+  padding-bottom: 100px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 180px;
+
+    @media (max-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+
+  .block-with-indent {
+    max-width: 650px;
+
+    &__content {
+      max-width: 530px;
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.page-appointment {
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  &__content {
+    max-width: 460px;
+    width: 100%;
+    font-size: rem(14px);
+    line-height: 1.7;
+
+    span {
+      font-family: Roboto-Bold, sans-serif;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: rem(14px);
+    line-height: 1.7;
+    color: var(--bgBlue);
+
+    &:hover {
+      .btn-arrow {
+        width: 34px;
+        border-radius: 20px;
+        opacity: 1;
+
+        &:before {
+          opacity: 1;
+        }
+
+        &__dots {
+          i {
+            opacity: 1;
+            transition: opacity;
+
+            &:nth-of-type(1) {
+              transition-delay: .1s;
+            }
+
+            &:nth-of-type(2) {
+              transition-delay: .15s;
+            }
+
+            &:nth-of-type(3) {
+              transition-delay: .18s;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-arrow {
+      margin-left: 10px;
+    }
+  }
+}
+
+.appointment-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 925px;
+  margin-bottom: 85px;
+  padding: 45px 30px;
+  background-color: #f1f9ff;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 40px;
+    font-size: rem(14px);
+    line-height: 1.7;
+    text-align: center;
+  }
+}
+
+.appointment-form {
+  max-width: 530px;
+  width: 100%;
+
+  &__field {
+    position: relative;
+
+    &_focus {
+      .appointment-form__label {
+        top: 55px;
+        opacity: 1;
+      }
+
+      .appointment-form__input {
+        border-color: var(--mainblue);
+      }
+
+      &:before {
+        opacity: 1 !important;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 0;
+      opacity: 0.5;
+      transition: opacity .3s;
+    }
+
+    &_name {
+      margin-bottom: 35px;
+
+      &:before {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url('../img/ico-user-blue.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+    }
+
+    &_phone {
+      margin-bottom: 25px;
+
+      &:before {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/ico-phone-blue.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+    }
+
+    &_descr {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      font-family: Roboto-Light, sans-serif;
+      font-size: rem(12px);
+      text-align: center;
+      color: var(--textBlue);
+      opacity: .5;
+
+
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-left: 15px;
+        background-image: url('../img/ico-check-blue.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 15px 15px 35px;
+    border: none;
+    border-bottom: 1px solid var(--textBlue);
+    border-radius: 0;
+    background-color: transparent;
+    transition: border-color .3s;
+  }
+
+  &__label {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: var(--textBlue);
+    opacity: .5;
+    transition: top .3s, opacity .3s;
+    pointer-events: none;
+  }
+
+  &__btn {
+    justify-content: flex-start;
+    max-width: 245px;
+    width: 100%;
+    margin: auto;
+  }
+}

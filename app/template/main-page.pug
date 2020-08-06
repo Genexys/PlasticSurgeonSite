@@ -1,0 +1,168 @@
+.main-page
+  .main-container
+    .main-page__about-doctor
+      h2.section-title.section-title_small Пластический хирург Владимир Борисович Карпюк
+
+      .main-page__about-doctor-text
+        p.section-descr 
+          |Кандидат медицинских наук, врач высшей квалификационной категории, 
+          |член Российского общества пластических еконструктивных и эстетических 
+          |хирургов (ОПРЭХ), Международной конфедерации пластической, 
+          |реконструктивной и эстетической хирургии (IPRAS), Международного 
+          |общества пластической регенеративной хирургии (ISPRES).
+        p.section-descr 
+          |С 2001 года специализируется на пластической хирургии. Ежегодно принимает 
+          |участие в работе международных форумов.  Научная деятельность отражена
+          |в ряде публикаций в журналах и сборниках, имеются патенты и авторское 
+          |свидетельство на изобретения в области нейрохирургии, восстановительной 
+          |и эстетической хирургии.
+
+    .main-page__perform-operations
+      h2.section-title.section-title_small Выполняемые пластические операции
+      each val in [1,2]
+        .main-page__row-operations
+          each val in ['Пластика лица', 'Пластика Век — Блефаропластика', 'Пластика носа — Ринопластика', 'Пластика губ', 'Пластика ушей — Отопластика']
+            .main-page__item-operations
+              h3.main-page__name-operations= val
+              .main-page__list-operations
+                ul.list-tags
+                  li.list-tags__item
+                    a(href="") фейслифтинг
+                  li.list-tags__item
+                    a(href="") Подтяжка средней зоны
+                  li.list-tags__item
+                    a(href="") Подтяжка SMAS
+                  li.list-tags__item
+                    a(href="") Подтяжка SMAS
+                  li.list-tags__item
+                    a(href="") Подтяжка 
+                  li.list-tags__item
+                    a(href="") Подтяжка височной зоны
+      .main-page__perform-operations-link
+        a(href="")
+          span посмотреть цены
+          .btn-arrow 
+            .btn-arrow__dots
+              i
+              i
+              i
+    .main-page__about-clinic
+      h2.section-title 
+        | Клиника 
+        br
+        |Шале Санте
+      .main-page__about-clinic-text
+        p.section-descr 
+          |Клиника «Шале Сантэ» является первым 
+          |в Краснодаре частным медицинским учреждением, 
+          |включающим в себя поликлинику и хирургическое 
+          |отделение, спроектированное в соответствии 
+          |с мировыми требованиями и оснащенное 
+          |оборудованием последнего поколения для выполнения 
+          |пластических операций любого объема 
+          |и сложности.
+          .main-page__about-clinic-video
+            img(src="img/img-video.jpg", alt="")
+          p.section-descr «Шале Сантэ», что в переводе обозначает дом здоровья, — это респектабельные интерьеры в стиле французского Прованса, уютные и комфортные палаты, сбалансированное питание для пациентов, высокий сервис и доступная ценовая политика.
+          p.section-descr Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint occaecat cupidatat.Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in tufpoy voluptate velit esse cillum dolore eu fugiat nulla parieratur. Excepteur sint occaecat cupidatat.
+
+      .image-whith-link.main-page__link-clinic
+        img(src="img/img-clinic-main-page.jpg", alt="")
+        .image-whith-link__text-block
+          p.image-whith-link__text
+            |Клиника
+            br
+            |«Шале Сантэ»
+          .image-whith-link__link
+            a(href="sante-clinic.ru" target="_blank") sante-clinic.ru
+
+    .main-page__stages
+      h2.section-title.section-title_small Этапы работ
+
+      .main-page__stage-slider-wrapper
+        .stage-slider.stage-slider_desc
+          each val in [1, 2, 3, 4, 5]
+            .slide-stage 
+              .slide-stage__img
+                img(src=`img/stage-img/stage-` + val + `.svg`, alt="")
+              .slide-stage__text ОБСЛЕДОВАНИЕ
+
+        #stage-slider.swiper-container.stage-slider.stage-slider_mob
+          .swiper-wrapper
+            each val in [1, 2, 3, 4, 5]
+              .swiper-slide.slide-stage
+                .slide-stage__img
+                  img(src=`img/stage-img/stage-` + val + `.svg`, alt="")
+                .slide-stage__text ОБСЛЕДОВАНИЕ
+
+    .main-question-block
+      p.section-title.main-question-block__title
+        |Задать вопрос доктору 
+        span ON–LINE
+      p.main-question-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        
+      .main-question-block__btn
+        a.main-btn(href="") задать вопрос
+
+    .main-quote-block
+      <svg class="ico-clip" xmlns="http://www.w3.org/2000/svg" width="28.641" height="69.715" viewBox="0 0 28.641 69.715">
+        <path id="ico-clip" d="M635.521,392.581v25.925c0,5.8,2.835,10.5,7.91,10.5h0c5.074,0,7.909-4.7,7.909-10.5V392.581c0-5.8-4.114-10.5-9.188-10.5h-1.986c-5.615,0-10.166,5.2-10.166,11.619v42.333c0,7.6,5.392,13.763,12.042,13.763H644.6c6.65,0,12.042-6.162,12.042-13.763V393.7" transform="translate(-629 -381.08)" fill="none" stroke="#014f80" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </svg>
+
+      .main-quote-block__img
+        img(src="img/quote-img.png", alt="Владимир Борисович Карпюк")
+      .main-quote-block__content
+        p.main-quote-block__text Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two categories. The first is reconstructive surgery which includes 
+        span.main-quote-block__name Карпюк В. Б.
+
+    .main-diploma-block
+      h2.section-title.section-title_small Дипломы и сертификаты
+
+      #main-diploma-slider.diploma-block
+        .diploma-block__container
+          .swiper-wrapper.diploma-block__wrapper
+            each val in [1, 2, 3, 4]
+              .swiper-slide.diploma-block__slide
+                .diploma-block__item
+                  .diploma-block__img
+                    a(data-fancybox="gallery" href="img/Image-diplom.jpg")
+                      img(src="img/Image-diplom.jpg", alt="")
+                  .diploma-block__content
+                    span.diploma-block__title Сертификат
+                    p.diploma-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+  .main-form-block
+    h2.section-title Запись на приём
+    form.form-appointment
+      .main-input.main-input_name
+        input(type="text", placeholder="Имя")
+      .main-input.main-input_phone
+        input(type="tel", placeholder="Телефон")
+
+      button.main-btn.main-btn_with-icon записаться на приём
+    p.main-form-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+  .main-container
+    .page-bottom-block
+      .about-surgery
+        h2.section-title Пластическая хирургия в Краснодаре
+        p.about-surgery__descr Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+  
+        .about-surgery__text-block
+          p.section-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.
+
+          p.section-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.
+
+          p.section-descr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quiepakis nostrud exercitation ullamco laboris nsi ut aliquip ex ea comepmodo consetquat. Duis aute irure dolor in reprehenderit in voluptate velit esse cfgillum dolore eutpe fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inpeku culpa qui officia deserunt mollit anim id est laborum.
+
+      .review-block
+        .review-block__wrapper
+          .review-block__top
+            a(href="").review-block__link Отзывы
+            a(href="").review-block__link БОЛЬШЕ ОТЗЫВОВ
+          .review-block__inner
+            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+              .review-block__item.review-item
+                .review-item__img
+                  img(src="img/ico-empty-user.svg", alt="")
+                .review-item__content
+                  p.review-item__name Мария Шарапова
+                  p.review-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam.

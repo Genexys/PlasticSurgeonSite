@@ -1,0 +1,192 @@
+.page-contacts {
+	padding-top: 40px;
+
+	@media (max-width: 768px) {
+		padding-top: 30px;
+	}
+
+	&__wrapper {
+		max-width: 985px;
+		margin: 0 auto;
+		padding: 0 30px;
+
+		@media (max-width: 600px) {
+			padding: 0 15px;
+		}
+	}
+
+	&__bottom {
+		margin-bottom: 230px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 130px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 80px;
+		}
+
+		@media (max-width: 600px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__descr {
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	&__title {
+		max-width: 340px;
+		width: 100%;
+	}
+
+	&__content {
+		max-width: 360px;
+		width: 100%;
+		margin: 0;
+		font-size: rem(14px);
+		line-height: 1.7;
+
+		span {
+			font-family: Roboto-Bold, sans-serif;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		font-family: Roboto-Regular, sans-serif;
+		font-size: rem(14px);
+		line-height: 1.7;
+		color: var(--bgBlue);
+
+		&:hover {
+			.btn-arrow {
+				width: 34px;
+				border-radius: 20px;
+				opacity: 1;
+
+				&:before {
+					opacity: 1;
+				}
+
+				&__dots {
+					i {
+						opacity: 1;
+						transition: opacity;
+
+						&:nth-of-type(1) {
+							transition-delay: 0.1s;
+						}
+
+						&:nth-of-type(2) {
+							transition-delay: 0.15s;
+						}
+
+						&:nth-of-type(3) {
+							transition-delay: 0.18s;
+						}
+					}
+				}
+			}
+		}
+
+		.btn-arrow {
+			margin-left: 10px;
+		}
+	}
+}
+
+.contacts-block {
+	display: flex;
+	height: 350px;
+	margin-top: 95px;
+	margin-bottom: 180px;
+
+	@media (max-width: 1024px) {
+		margin-top: 50px;
+		margin-bottom: 80px;
+	}
+
+	@media (max-width: 800px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
+
+	&__map {
+		position: relative;
+		display: flex;
+		max-width: 345px;
+		width: 100%;
+		border: 1px solid var(--lightBlue);
+		background-image: url("../img/map-img.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+
+		@media (max-width: 800px) {
+			height: 400px;
+		}
+
+		&-bottom {
+			width: 100%;
+			padding: 15px;
+			margin-top: auto;
+			background-color: rgba(#fff, 0.4);
+
+			p {
+				margin: 0 0 10px;
+				font-size: rem(14px);
+				font-family: Roboto-Bold, sans-serif;
+				text-transform: uppercase;
+			}
+
+			a {
+				font-family: Roboto-Bold, sans-serif;
+				line-height: 1.14;
+				color: var(--mainblue);
+
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					width: 16px;
+					height: 16px;
+					margin-right: 10px;
+					background-image: url("../img/ico-earth-blue.svg");
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: 50% 50%;
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 610px;
+		width: 100%;
+		margin-left: -1px;
+		padding: 30px;
+		border: 1px solid var(--lightBlue);
+
+		@media (max-width: 800px) {
+			max-width: 345px;
+			margin-top: -1px;
+			margin-right: 0;
+			padding: 30px 15px;
+		}
+	}
+}

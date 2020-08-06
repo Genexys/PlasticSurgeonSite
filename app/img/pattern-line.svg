@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="1" viewBox="0 0 10 1">
+  <g id="pattern-line" transform="translate(0 0.5)">
+    <line id="Line" x2="10" opacity="0.5" stroke="#bce0fd" stroke-width="1" stroke-dasharray="5" fill="none"/>
+  </g>
+</svg>

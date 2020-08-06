@@ -1,0 +1,59 @@
+header.main-header.main-header_second-page
+    .main-header__wrapper
+      .main-header__logo
+        a(href="")
+          img(src="img/main-logo.svg", alt="Карпюк Владимир Борисович")
+      .main-header__nav
+        nav(role="navigation", aria-label="Main Navigation").header-menu
+          ul.header-menu__list
+            each val in ['О хирурге', 'Операции и цены', 'Пациентам', 'Контакты']
+              if val === 'Операции и цены'
+                li.header-menu__item
+                  a(href="", aria-haspopup="true" aria-expanded="false")= val
+                  ul.header-menu__submenu.header-submenu
+                    li.header-submenu__item
+                      a(href="") Цены на операции
+                    li.header-submenu__item
+                      a(href="")
+                        |Выполняемые
+                        br
+                        | операции
+                      ul.inner-submenu
+                        li.inner-submenu__item
+                          a(href="") пластика груди
+                        li.inner-submenu__item
+                          a(href="") пластика живота
+                        li.inner-submenu__item
+                          a(href="") липосакция
+                        li.inner-submenu__item
+                          a(href="") пластика лица
+                        li.inner-submenu__item
+                          a(href="") пластика носа
+                        li.inner-submenu__item
+                          a(href="") пластика губ
+                        li.inner-submenu__item
+                          a(href="") пластика ушей
+              else if val === 'Контакты'
+                li.header-menu__item
+                  a(href="/contacts")= val
+              else
+                li.header-menu__item
+                  a(href="#", aria-haspopup="true" aria-expanded="false")= val
+                  ul.header-menu__submenu.header-submenu
+                    li.header-submenu__item
+                      a(href="") О хирурге
+                    li.header-submenu__item
+                      a(href="") События и акции
+                    li.header-submenu__item
+                      a(href="") Отзывы
+                    li.header-submenu__item
+                      a(href="")
+                        |Политика
+                        br 
+                        |конфиденциальности
+        .main-header__burger
+          button(type="button", aria-expanded="false", aria-controls="layout-menu").burger-menu
+            .burger-menu__inner
+      .main-header__search
+        button(type="button", aria-controls="search")#search-btn.search-btn
+          img(src="img/ico-search.svg", alt="Поиск")

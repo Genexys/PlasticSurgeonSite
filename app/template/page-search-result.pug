@@ -1,0 +1,31 @@
+.search-result
+  .search-result__wrapper
+    .search-result__result-head
+      span.section-title.section-title_small Поиск: 
+      p.section-title.section-title_small.search-result__search-text Увеличение друзей
+
+    //- .search-result__error
+      p.section-title.search-result__error-text К сожалению, ничего не найдено
+      p.search-result__error-link
+        span Попробуйте новый поиск 
+        |или воспользуйтесь 
+        a(href="") меню
+
+    
+
+    .search-result__result
+      each val in [1, 2]
+        .block-with-indent
+          ._title Выполняемые операции
+          ._content 
+            ul.result-list
+              each val in [1, 2, 3, 4]
+                li.result-list__item
+                  a(href="")
+                    .result-list__title Увеличение груди
+                    p.result-list__text 17-19 октября 2018 г. в Национальном медицинском исследовательском центре онкологии им. Н.Н. Блохина Минздрава РФ проходила XXI школа реконструктивной хирургии молочной железы.  
+
+    .search-result__bar
+      form.search-form(action="")
+        input(type="text", placeholder="новый поиск").search-form__input
+        button.search-form__btn

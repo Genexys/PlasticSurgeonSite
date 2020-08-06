@@ -1,0 +1,36 @@
+.page-qa
+  ._wrapper
+    ._switch-block
+      h1.section-title.section-title_small Часто задаваемые вопросы по темам:
+      ._switcher.switcher-review
+        each val in ['Увеличение груди', 'Пластика живота', 'Липосакция', 'Пластика лица', 'Пластика носа', 'Пластика губ', 'Пластика ушей']
+          .switcher-review__item
+            .btn-arrow.switcher-review__btn
+              .btn-arrow__dots
+                i
+                i
+                i
+            a(href="").switcher-review__link= val
+    ._qa
+      .qa-block
+        ul.qa-block__list
+          each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+            li.qa-block__item
+              .qa-block__question Сколько стоит операция по увеличению груди?
+              .qa-block__answer-wrapper
+                .qa-block__answer-content
+
+                  span Ответ:
+                  p.qa-block__answer 
+                    |Стоимость операции составляет 235 000 р
+                    br
+                    |Местная анестезия: 500 руб. Эндотрахеальный наркоз
+  ._bottom
+    .main-question-block.main-question-block_light
+      p.section-title.main-question-block__title
+        |Задать вопрос доктору 
+        span ON–LINE
+      p.main-question-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        
+      .main-question-block__btn
+        a.main-btn(href="") задать вопрос

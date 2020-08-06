@@ -1,0 +1,233 @@
+doctype html
+html(lang="ru")
+  include ./template/head.pug
+  body
+    include ./template/header.pug
+
+    main.main-content
+      //include ./template/page-search-result.pug
+      //.main-content__wrapper
+        aside.aside-block
+          .aside-block__wrapper
+            span.aside-block__title Информация
+            span.aside-block__current-page О хирурге
+            nav.aside-block__nav
+              ul.aside-block__list
+                li.aside-block__item
+                  a(href="http://", target="_blank", rel="noopener noreferrer") О хирурге
+                li.aside-block__item
+                  a(href="http://", target="_blank", rel="noopener noreferrer") События и акции
+                li.aside-block__item
+                  a(href="http://", target="_blank", rel="noopener noreferrer") отзывы
+                li.aside-block__item
+                  a(href="http://", target="_blank", rel="noopener noreferrer") Политика конфиденциальности
+        //section.inner-content
+          //- include ./template/page-about-doctor.pug
+          //- include ./template/page-reviews.pug
+          //- include ./template/page-news.pug
+          //- include ./template/page-privacy.pug
+          //- include ./template/page-price.pug
+          //- include ./template/page-surgery-list.pug
+          //- include ./template/page-surgery-list-details.pug
+          //- include ./template/page-surgery.pug
+          //- include ./template/page-appointment.pug
+          //include ./template/page-qa.pug
+          //- include ./template/page-gallery.pug
+      //- .main-form-block
+        h2.section-title Запись на приём
+        form.form-appointment
+          .main-input.main-input_name
+            input(type="text", placeholder="Имя")
+          .main-input.main-input_phone
+            input(type="tel", placeholder="Телефон")
+
+          button.main-btn.main-btn_with-icon записаться на приём
+        p.main-form-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      //- .main-container
+        .page-bottom-block
+          .page-gallery
+            .page-gallery__wrapper
+              .page-gallery__top
+                a(href="").page-gallery__link примеры операций
+              .page-gallery__list
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+                  .page-gallery__item
+                    <a data-fancybox="gallery" href="img/img-video.jpg"><img src="img/img-video.jpg"></a>
+              .page-gallery__bottom
+                a(href="").page-gallery__inst больше фото на моей странице
+          .review-block
+            .review-block__wrapper
+              .review-block__top
+                a(href="").review-block__link Отзывы
+                a(href="").review-block__link БОЛЬШЕ ОТЗЫВОВ
+              .review-block__inner
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+                  .review-block__item.review-item
+                    .review-item__img
+                      img(src="img/ico-empty-user.svg", alt="")
+                    .review-item__content
+                      p.review-item__name Мария Шарапова
+                      p.review-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam.
+      //- include ./template/main-banner.pug
+      //- include ./template/main-page.pug
+      include ./template/page-contacts.pug
+
+    include ./template/footer.pug
+    //- include ./template/404.pug
+    nav#layout-menu.layout-menu
+      .layout-menu__close
+        button(type="button")#close-layout-menu.close-layout
+      .layout-menu__wrapper
+        .layout-menu__logo
+          img(src="img/logo-mini.svg", alt="Карпюк Владимир Борисович")
+          button#close-mobile-menu.close-mobile
+        .layout-menu__inner
+
+          .layout-menu__mobile
+            .layout-menu__mobile-wrapper
+              ul.mobile-menu
+                li.mobile-menu__item
+                  a(href="#1", target="_blank", rel="noopener noreferrer") Информация
+                li.mobile-menu__item
+                  a(href="#2", target="_blank", rel="noopener noreferrer") Операции
+                li.mobile-menu__item
+                  a(href="#3", target="_blank", rel="noopener noreferrer") Пациентам
+                li.mobile-menu__item
+                  a(href="#4", target="_blank", rel="noopener noreferrer") полезное
+                li.mobile-menu__item
+                  a(href="", target="_blank", rel="noopener noreferrer") контакты
+
+          .layout-menu__section(data-section-menu="1")
+            span.layout-menu__section-title Информация
+            ul.layout-menu__list
+              li.layout-menu__item
+                a(href="") О хирурге
+              li.layout-menu__item
+                a(href="") Новости
+              li.layout-menu__item
+                a(href="") Отзывы
+              li.layout-menu__item
+                a(href="") Политика
+              li.layout-menu__item
+                a(href="") Конфиденциальности
+          .layout-menu__section(data-section-menu="2")
+            .layout-menu__section-title
+              span Операции
+            ul.layout-menu__list
+              li.layout-menu__item
+                a(href="") Цены на операции
+              li.layout-menu__item
+                a(href="")
+                  |Выполняемые
+                  br
+                  | операции
+                ul.inner-submenu
+                  li.inner-submenu__item
+                    a(href="") пластика груди
+                  li.inner-submenu__item
+                    a(href="") пластика живота
+                  li.inner-submenu__item
+                    a(href="") липосакция
+                  li.inner-submenu__item
+                    a(href="") пластика лица
+                  li.inner-submenu__item
+                    a(href="") пластика носа
+                  li.inner-submenu__item
+                    a(href="") пластика губ
+                  li.inner-submenu__item
+                    a(href="") пластика ушей
+          .layout-menu__section(data-section-menu="3")
+            .layout-menu__section-title
+              span Пациентам
+            ul.layout-menu__list
+              li.layout-menu__item
+                a(href="") Запись на приём
+              li.layout-menu__item
+                a(href="") Вопрос ответ
+              li.layout-menu__item
+                a(href="") Онлайн консультации
+              li.layout-menu__item
+                a(href="") Фото до и после
+          .layout-menu__section(data-section-menu="4")
+            .layout-menu__section-title
+              span Полезное
+            ul.layout-menu__list
+              li.layout-menu__item
+                a(href="") Первый визит
+              li.layout-menu__item
+                a(href="") Налоговые вычеты
+              li.layout-menu__item
+                a(href="") Права пациента
+              li.layout-menu__item
+                a(href="") Для иногородних
+              li.layout-menu__item
+                a(href="") Перед операцией
+              li.layout-menu__item
+                a(href="") Полезная информация
+          .layout-menu__section.layout-menu__section_contacts
+            .layout-menu__section-title
+              span Контакты
+            .main-contacts
+              .main-contacts__doctor
+                span.main-contacts__name Владимир Борисович Карпюк
+                a(href="tel: +7 918 157 83 46").main-contacts__item.main-contacts__phone +7 918 157 83 46
+                a(href="mailto:vkarpyuk@mail.ru").main-contacts__item.main-contacts__mail vkarpyuk@mail.ru
+                a(href="instagram.com/karpyuk_plastic_surgeon").main-contacts__item.main-contacts__inst karpyuk_plastic_surgeon
+
+              .main-contacts__loc
+                .main-contacts__name Клиника «Шале Сантэ»
+                .main-contacts__item.main-contacts__address г. Краснодар,ул. Красных Партизан, д. 238
+                a(href="tel: +7 (861) 215 66 10").main-contacts__item.main-contacts__phone  +7 (861) 215 66 10
+        .layout-menu__copyright
+          .copyright
+            a(href="", target="_blank")
+              |создание сайта
+              span PLATZKART
+
+    #layout-search.layout-search
+      .layout-search__close
+        button(type="button")#close-layout-search.close-layout
+      .layout-search__wrapper
+        .layout-search__logo
+            img(src="img/logo-mini.svg", alt="Карпюк Владимир Борисович")
+        .layout-search__inner
+          form.search-form(action="")
+            input(type="text", placeholder="поиск по сайту").search-form__input
+            button.search-form__btn
+        .layout-search__copyright
+            .copyright
+              a(href="", target="_blank")
+                |создание сайта
+                span PLATZKART
+    .modal-overlay#modal-overlay
+    .modal-block#modal-from-request
+      .modal-inner
+        .modal-block__title оформление Заявки
+
+        .modal-block__form-wrapper
+          form.modal-block__form
+            .form-input.form-input_name
+              input(type="text")
+              .form-input__label Имя
+            .form-input.form-input_tel
+              input(type="text")
+              .form-input__label Телефон
+            .form-input.form-input_mail
+              input(type="email", name="")
+              .form-input__label E-mail
+
+            label(for="privacy-checkbox").modal-block__privacy-block
+              input(type="checkbox", name="", id="privacy-checkbox")
+              p Даю согласие на обработку моих персональных данных
+            button.main-btn(type="submit") ОТПРАВИТЬ ЗАЯВКУ
+
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+
+  script(src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js")
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js")
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+  script(src="js/app.js")

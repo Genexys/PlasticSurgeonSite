@@ -1,0 +1,552 @@
+.main-page {
+	padding-top: 55px;
+
+	&__about-doctor {
+		margin-bottom: 85px;
+
+		@media (max-width: 600px) {
+			margin-bottom: 30px;
+		}
+
+		.section-title {
+			margin-bottom: 40px;
+			text-align: center;
+		}
+	}
+
+	&__about-doctor-text {
+		max-width: 1100px;
+		margin: auto;
+		column-count: 2;
+		column-gap: 30px;
+
+		@media (max-width: 600px) {
+			column-count: 1;
+			column-gap: 0;
+		}
+	}
+
+	&__perform-operations {
+		position: relative;
+		margin-bottom: 90px;
+		padding-bottom: 75px;
+
+		@media (max-width: 600px) {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 20px;
+			bottom: 0;
+			max-width: 1400px;
+			width: calc(100% + 40px);
+			height: 1px;
+			margin: 0 -40px;
+			background-color: var(--lightBlue);
+
+			@media (max-width: 1024px) {
+				max-width: 100%;
+				left: 0;
+				width: 100%;
+				margin: 0;
+			}
+		}
+
+		.section-title {
+			margin-bottom: 75px;
+			text-align: center;
+
+			@media (max-width: 600px) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	&__row-operations {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		border-top: 1px solid var(--lightBlue);
+	}
+
+	&__item-operations {
+		flex-basis: calc(50% - 15px);
+		margin-bottom: 5px;
+
+		@media (max-width: 600px) {
+			flex-basis: 100%;
+		}
+
+		&:nth-of-type(2n + 1) {
+			margin-right: 30px;
+		}
+	}
+
+	&__name-operations {
+		font-family: Roboto-Regular, sans-serif;
+		font-size: rem(14px);
+		font-weight: normal;
+		line-height: 1.14;
+		color: var(--textBlue);
+	}
+
+	&__perform-operations-link {
+		display: flex;
+		padding-top: 10px;
+		text-align: right;
+
+		a {
+			position: relative;
+			display: flex;
+			margin-left: auto;
+			padding-right: 25px;
+			font-size: rem(14px);
+			line-height: 1.3;
+			color: var(--bgBlue);
+			transition: opacity 0.3s;
+
+			&:hover {
+				opacity: 0.8;
+
+				.btn-arrow {
+					width: 34px;
+					// transform: translateX(20px);
+					border-radius: 20px;
+					opacity: 1;
+
+					&:before {
+						opacity: 1;
+					}
+
+					.btn-arrow__dots {
+						i {
+							opacity: 1;
+							transition: opacity;
+
+							&:nth-of-type(1) {
+								transition-delay: 0.1s;
+							}
+
+							&:nth-of-type(2) {
+								transition-delay: 0.15s;
+							}
+
+							&:nth-of-type(3) {
+								transition-delay: 0.18s;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.btn-arrow {
+			// position: absolute;
+			// top: 0;
+			// right: 0;
+			margin-left: 10px;
+			// transition: transform 0.3s;
+		}
+	}
+
+	&__about-clinic {
+		max-width: 1100px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto 130px;
+
+		@media (max-width: 768px) {
+			margin: 0 auto 70px;
+		}
+
+		.section-title {
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: 100%;
+			margin-bottom: 35px;
+		}
+	}
+
+	&__about-clinic-text {
+		max-width: 760px;
+		max-height: 520px;
+		columns: 2 333px;
+		column-fill: a;
+		column-gap: 15px;
+		padding-right: 40px;
+
+		@media (max-width: 1024px) {
+			max-height: none;
+			padding-right: 0;
+			columns: 1 auto;
+		}
+	}
+
+	&__about-clinic-video {
+		margin: 20px 0;
+
+		@media (max-width: 1024px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__link-clinic {
+		max-width: 315px;
+		width: 100%;
+
+		@media (max-width: 1024px) {
+			margin: auto;
+		}
+
+		img {
+			height: 100%;
+			object-fit: cover;
+
+			@media (max-width: 1024px) {
+				height: auto;
+			}
+		}
+	}
+
+	&__stages {
+		position: relative;
+		margin-bottom: 115px;
+		padding-bottom: 120px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 80px;
+			padding-bottom: 50px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 20px;
+			bottom: 0;
+			max-width: 1400px;
+			width: calc(100% + 40px);
+			height: 1px;
+			margin: 0 -40px;
+			background-color: var(--lightBlue);
+
+			@media (max-width: 1024px) {
+				left: 0;
+				max-width: 100%;
+				width: 100%;
+				margin: 0;
+			}
+		}
+
+		.section-title {
+			margin-bottom: 65px;
+			text-align: center;
+
+			@media (max-width: 600px) {
+				margin: 0 auto 40px;
+			}
+		}
+	}
+
+	.main-question-block {
+		margin: 0 auto 150px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 70px;
+		}
+	}
+
+	&__stage-slider-wrapper {
+		@media (max-width: 768px) {
+			margin: 0 -15px 25px;
+		}
+	}
+
+	.about-surgery {
+		flex-basis: 43.5%;
+		padding-top: 85px;
+		padding-right: 50px;
+
+		@media (max-width: 1023px) {
+			display: none;
+		}
+
+		.section-title {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&__descr {
+			margin-bottom: 35px;
+			font-family: Roboto-Regular, sans-serif;
+			font-size: rem(20px);
+			line-height: 1.5;
+			text-align: center;
+			color: var(--textBlue);
+		}
+	}
+}
+
+.stage-slider {
+	justify-content: space-between;
+
+	&_desc {
+		display: flex;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&_mob {
+		display: none;
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	.slide-stage {
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		background: #fff;
+
+		&:last-of-type {
+			&.swiper-slide-next {
+				.slide-stage__img {
+					&:after {
+						left: -40%;
+						width: 30%;
+						transition: left 0.5s, width 0.5s;
+					}
+
+					img {
+						left: -50%;
+						transform: scale(0.8);
+						transition: left 0.5s, transform 0.5s;
+					}
+				}
+			}
+		}
+
+		&.swiper-slide-next {
+			.slide-stage__img {
+				img {
+					left: -50%;
+					transform: scale(0.8);
+					transition: left 0.5s, transform 0.5s;
+				}
+			}
+		}
+
+		&__img {
+			position: relative;
+			z-index: 13;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 25px;
+			background: #fff;
+
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+
+			img {
+				position: relative;
+				left: 0;
+				z-index: 10;
+				transform: scale(1);
+				background-color: #fff;
+				transition: left 0.5s, transform 0.5s;
+
+				@media (max-width: 768px) {
+					max-width: 100px;
+				}
+			}
+		}
+
+		&__text {
+			font-family: Roboto-Bold, sans-serif;
+			font-size: rem(16px);
+			text-align: center;
+			line-height: 1.3;
+			color: var(--textBlue);
+		}
+
+		&:not(:last-of-type) {
+			.slide-stage__img {
+				&:after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: -220px;
+					z-index: 1;
+					height: 4px;
+					width: 200%;
+					background-color: var(--textBlue);
+					transform: translateY(-50%);
+
+					@media (max-width: 1200px) {
+						right: -150px;
+						width: 140%;
+					}
+
+					@media (max-width: 1024px) {
+						right: -110px;
+						width: 100%;
+					}
+
+					@media (max-width: 768px) {
+						right: -160px;
+						width: 160%;
+					}
+				}
+			}
+		}
+
+		&:last-of-type {
+			.slide-stage__img {
+				@media (max-width: 768px) {
+					&:after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						right: auto;
+						left: 0;
+						z-index: 1;
+						height: 4px;
+						width: 50%;
+						background-color: var(--textBlue);
+						transform: translateY(-50%);
+						transition: left 0.5s, width 0.5s;
+					}
+				}
+			}
+		}
+
+		&:first-of-type {
+			.slide-stage__img {
+				@media (max-width: 768px) {
+					&:after {
+						right: 0;
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-quote-block {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: gw(560px);
+	margin-bottom: 100px;
+	padding: 50px 30px;
+	background-color: #f1f9ff;
+
+	@media (max-width: 600px) {
+		margin-bottom: 50px;
+	}
+
+	@media (max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+		padding: 55px 15px 30px;
+	}
+
+	.ico-clip {
+		position: absolute;
+		top: -35px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__img {
+		max-width: 317px;
+		margin-right: gw(127px);
+		border: 4px solid var(--textBlue);
+		border-radius: 50%;
+		overflow: hidden;
+
+		@media (max-width: 767px) {
+			flex-shrink: 1;
+			margin: 0 10px;
+		}
+
+		img {
+			margin: auto;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	&__content {
+		position: relative;
+		max-width: 650px;
+		width: 100%;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 15px;
+			margin-bottom: 25px;
+			background-image: url("../img/ico-quote.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 50% 50%;
+		}
+	}
+
+	&__text {
+		margin: 0 0 5px;
+		font-family: Georgia-Italic, sans-serif;
+		font-size: rem(20px);
+		line-height: 1.5;
+		color: var(--textBlue);
+
+		@media (max-width: 1024px) {
+			font-size: rem(18px);
+		}
+
+		@media (max-width: 500px) {
+			margin: 0 0 15px;
+			font-size: rem(14px);
+		}
+	}
+
+	&__name {
+		font-family: Georgia-Italic, sans-serif;
+		font-size: rem(30px);
+		line-height: 1.7;
+		color: var(--textBlue);
+
+		@media (max-width: 500px) {
+			font-size: rem(20px);
+		}
+	}
+}
+
+.main-diploma-block {
+	margin-bottom: 95px;
+
+	@media (max-width: 600px) {
+		margin-bottom: 50px;
+	}
+
+	.section-title {
+		margin-bottom: 55px;
+		text-align: center;
+	}
+}

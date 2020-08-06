@@ -1,0 +1,26 @@
+.page-reviews
+  ._wrapper
+    ._inner
+      ._switch-block
+        h1.section-title.section-title_small Отзывы
+        ._switcher.switcher-review
+          each val in ['Увеличение груди', 'Пластика живота', 'Липосакция', 'Пластика лица', 'Пластика носа', 'Пластика губ', 'Пластика ушей']
+            .switcher-review__item
+              .btn-arrow.switcher-review__btn
+                ._dots
+                  i
+                  i
+                  i
+              a(href="").switcher-review__link= val
+    ._review
+      .review-block
+        .review-block__wrapper
+          .review-block__inner
+            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+              .review-block__item.review-item
+                .review-item__img
+                  img(src="img/ico-empty-user.svg", alt="")
+                .review-item__content
+                  p.review-item__name Мария Шарапова
+                  p.review-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam.  
+      
