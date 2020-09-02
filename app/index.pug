@@ -6,7 +6,7 @@ html(lang="ru")
 
     main.main-content
       //include ./template/page-search-result.pug
-      //.main-content__wrapper
+      .main-content__wrapper
         aside.aside-block
           .aside-block__wrapper
             span.aside-block__title Информация
@@ -21,7 +21,7 @@ html(lang="ru")
                   a(href="http://", target="_blank", rel="noopener noreferrer") отзывы
                 li.aside-block__item
                   a(href="http://", target="_blank", rel="noopener noreferrer") Политика конфиденциальности
-        //section.inner-content
+        section.inner-content
           //- include ./template/page-about-doctor.pug
           //- include ./template/page-reviews.pug
           //- include ./template/page-news.pug
@@ -30,10 +30,10 @@ html(lang="ru")
           //- include ./template/page-surgery-list.pug
           //- include ./template/page-surgery-list-details.pug
           //- include ./template/page-surgery.pug
-          //- include ./template/page-appointment.pug
+          include ./template/page-appointment.pug
           //include ./template/page-qa.pug
           //- include ./template/page-gallery.pug
-      //- .main-form-block
+      .main-form-block
         h2.section-title Запись на приём
         form.form-appointment
           .main-input.main-input_name
@@ -69,8 +69,8 @@ html(lang="ru")
                       p.review-item__name Мария Шарапова
                       p.review-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam.
       //- include ./template/main-banner.pug
-      //- include ./template/main-page.pug
-      include ./template/page-contacts.pug
+      //include ./template/main-page.pug
+      //include ./template/page-contacts.pug
 
     include ./template/footer.pug
     //- include ./template/404.pug
@@ -221,13 +221,17 @@ html(lang="ru")
               p Даю согласие на обработку моих персональных данных
             button.main-btn(type="submit") ОТПРАВИТЬ ЗАЯВКУ
 
+    #popup-thnx.popup-thnx(style="display: none")
+      p.popup-thnx__title Спасибо
+      p.popup-thnx__text Мы вам перезвоним!
+
   script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
 
   script(src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js")
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js")
 
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
   script(src="js/app.js")

@@ -85,68 +85,75 @@
     </header>
     <main class="main-content">
       <!--include ./template/page-search-result.pug-->
-      <!--.main-content__wrapper
-      aside.aside-block
-        .aside-block__wrapper
-          span.aside-block__title Информация
-          span.aside-block__current-page О хирурге
-          nav.aside-block__nav
-            ul.aside-block__list
-              li.aside-block__item
-                a(href="http://", target="_blank", rel="noopener noreferrer") О хирурге
-              li.aside-block__item
-                a(href="http://", target="_blank", rel="noopener noreferrer") События и акции
-              li.aside-block__item
-                a(href="http://", target="_blank", rel="noopener noreferrer") отзывы
-              li.aside-block__item
-                a(href="http://", target="_blank", rel="noopener noreferrer") Политика конфиденциальности
-      //section.inner-content
-        //- include ./template/page-about-doctor.pug
-        //- include ./template/page-reviews.pug
-        //- include ./template/page-news.pug
-        //- include ./template/page-privacy.pug
-        //- include ./template/page-price.pug
-        //- include ./template/page-surgery-list.pug
-        //- include ./template/page-surgery-list-details.pug
-        //- include ./template/page-surgery.pug
-        //- include ./template/page-appointment.pug
-        //include ./template/page-qa.pug
-        //- include ./template/page-gallery.pug
-      -->
-      <div class="page-contacts">
-        <div class="page-contacts__wrapper">
-          <h1 class="section-title section-title__small">
-             Контактная <br>информация</h1>
-          <div class="contacts-block">
-            <div class="contacts-block__map">
-              <div class="contacts-block__map-bottom">
-                <p>Клиника «Шале Сантэ»</p><a href="">смотреть на Яндекс карте</a>
-              </div>
-            </div>
-            <div class="contacts-block__contacts">
-              <div class="main-contacts main-contacts_dark">
-                <div class="main-contacts__doctor"><span class="main-contacts__name">Владимир Борисович Карпюк</span><a class="main-contacts__item main-contacts__phone" href="tel: +7 918 157 83 46">+7 918 157 83 46</a><a class="main-contacts__item main-contacts__mail" href="mailto:vkarpyuk@mail.ru">vkarpyuk@mail.ru</a><a class="main-contacts__item main-contacts__inst" href="instagram.com/karpyuk_plastic_surgeon">karpyuk_plastic_surgeon</a></div>
-                <div class="main-contacts__loc">
-                  <div class="main-contacts__name">Клиника «Шале Сантэ»</div>
-                  <div class="main-contacts__item main-contacts__address">г. Краснодар,ул. Красных Партизан, д. 238</div><a class="main-contacts__item main-contacts__phone" href="tel: +7 (861) 215 66 10"> +7 (861) 215 66 10</a>
+      <div class="main-content__wrapper">
+        <aside class="aside-block">
+          <div class="aside-block__wrapper"><span class="aside-block__title">Информация</span><span class="aside-block__current-page">О хирурге</span>
+            <nav class="aside-block__nav">
+              <ul class="aside-block__list">
+                <li class="aside-block__item"><a href="http://" target="_blank" rel="noopener noreferrer">О хирурге</a></li>
+                <li class="aside-block__item"><a href="http://" target="_blank" rel="noopener noreferrer">События и акции</a></li>
+                <li class="aside-block__item"><a href="http://" target="_blank" rel="noopener noreferrer">отзывы</a></li>
+                <li class="aside-block__item"><a href="http://" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="inner-content">
+          <div class="page-appointment">
+            <div class="appointment-block">
+              <div class="section-title section-title_small appointment-block__title">Укажите контактные данные</div>
+              <div class="appointment-block__descr">Администратор свяжется с вами для уточнения удобного времени</div>
+              <form class="appointment-form" action="">
+                <div class="appointment-form__field appointment-form__field_name">
+                  <input class="appointment-form__input" type="text">
+                  <label class="appointment-form__label">Имя</label>
                 </div>
+                <div class="appointment-form__field appointment-form__field_phone">
+                  <input class="appointment-form__input" type="tel">
+                  <label class="appointment-form__label">Телефон</label>
+                </div>
+                <div class="appointment-form__field appointment-form__field_descr">
+                  <p>Даю согласие на обработку моих персональных данных</p>
+                </div>
+                <div class="appointment-form__field">
+                  <button class="main-btn main-btn_with-icon appointment-form__btn" type="submit">записаться на приём</button>
+                </div>
+              </form>
+            </div>
+            <div class="page-appointment__bottom">
+              <div class="page-appointment__descr">
+                <p class="section-title section-title_small page-appointment__title">Где ведётся приём?</p>
+                <p class="page-appointment__content">Приём ведётся в клиника<span>«Шале Сантэ»</span>по адресу:<br>г. Краснодар,ул. Красных Партизан, д. 238,<br>+7 (861) 215 66 10</p>
+              </div>
+              <div class="page-appointment__descr">
+                <div class="page-appointment__title">
+                  <p class="section-title section-title_small">Есть вопрос?</p><a class="page-appointment__link" href=""><span>посмотреть частые вопросы</span>
+                    <div class="btn-arrow">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div></a>
+                </div>
+                <p class="page-appointment__content">Можно записаться на приём у администратора,<br>Также она ответит на ваши вопросы по телефону:<br><span>+7 918 157 83 46</span></p>
               </div>
             </div>
           </div>
-          <div class="page-contacts__bottom">
-            <div class="page-contacts__descr">
-              <div class="page-contacts__title"> 
-                <p class="section-title section-title_small">Есть вопрос?</p><a class="page-contacts__link" href=""> <span>посмотреть частые вопросы</span>
-                  <div class="btn-arrow">
-                    <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
-                  </div></a>
-              </div>
-              <p class="page-contacts__content">
-                 Можно записаться на приём у администратора, <br>Также она ответит на ваши вопросы по телефону:<br><span>+7 918 157 83 46</span></p>
-            </div>
-          </div>
-        </div>
+          <!--include ./template/page-qa.pug-->
+        </section>
       </div>
+      <div class="main-form-block">
+        <h2 class="section-title">Запись на приём</h2>
+        <form class="form-appointment">
+          <div class="main-input main-input_name">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="main-input main-input_phone">
+            <input type="tel" placeholder="Телефон">
+          </div>
+          <button class="main-btn main-btn_with-icon">записаться на приём</button>
+        </form>
+        <p class="main-form-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <!--include ./template/main-page.pug-->
+      <!--include ./template/page-contacts.pug-->
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -341,9 +348,13 @@
         </div>
       </div>
     </div>
+    <div class="popup-thnx" id="popup-thnx" style="display: none">
+      <p class="popup-thnx__title">Спасибо</p>
+      <p class="popup-thnx__text">Мы вам перезвоним!</p>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-</html><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/app.js"></script>
+</html>
