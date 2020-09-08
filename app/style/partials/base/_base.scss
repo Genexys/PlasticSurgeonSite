@@ -1713,3 +1713,19 @@ h6 {
 		}
 	}
 }
+.popup-thnx  {
+	max-width: 400px;
+	width: 100%;
+	border-radius: 20px;
+	color: var(--textBlue);
+
+	&__title {
+		margin: 0 0 10px;
+		font-family: Georgia,sans-serif;
+		font-size: rem(28px);
+	}
+
+	&__text {
+		margin: 0;
+	}
+}
