@@ -33,7 +33,7 @@
   <body>
     <header class="main-header main-header_second-page">
       <div class="main-header__wrapper">
-        <div class="main-header__logo"><img src="img/main-logo.svg" alt="Карпюк Владимир Борисович"></div>
+        <div class="main-header__logo"><a href=""><img src="img/main-logo.svg" alt="Карпюк Владимир Борисович"></a></div>
         <div class="main-header__nav">
           <nav class="header-menu" role="navigation" aria-label="Main Navigation">
             <ul class="header-menu__list">
@@ -84,6 +84,7 @@
       </div>
     </header>
     <main class="main-content">
+      <!--include ./template/page-search-result.pug-->
       <div class="main-content__wrapper">
         <aside class="aside-block">
           <div class="aside-block__wrapper"><span class="aside-block__title">Информация</span><span class="aside-block__current-page">О хирурге</span>
@@ -97,8 +98,273 @@
             </nav>
           </div>
         </aside>
-        <section class="inner-content"></section>
+        <section class="inner-content">
+          <!--include ./template/page-surgery-list.pug-->
+          <!--include ./template/page-surgery-list-details-2.pug-->
+          <!--include ./template/page-surgery-list-details.pug-->
+          <!--include ./template/page-surgery-list-details-4.pug-->
+          <!--include ./template/page-surgery.pug-->
+          <!--include ./template/page-appointment.pug-->
+          <div class="page-qa">
+            <div class="page-qa__wrapper">
+              <div class="page-qa__switch-block">
+                <h1 class="section-title section-title_small">Часто задаваемые вопросы по темам:</h1>
+                <div class="page-qa__switcher switcher-review">
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Увеличение груди</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Пластика живота</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Липосакция</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Пластика лица</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Пластика носа</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Пластика губ</a>
+                  </div>
+                  <div class="switcher-review__item">
+                    <div class="btn-arrow switcher-review__btn">
+                      <div class="btn-arrow__dots"><i></i><i></i><i></i></div>
+                    </div><a class="switcher-review__link" href="">Пластика ушей</a>
+                  </div>
+                </div>
+              </div>
+              <div class="page-qa__qa">
+                <div class="qa-block">
+                  <ul class="qa-block__list">
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="qa-block__item">
+                      <div class="qa-block__question">Сколько стоит операция по увеличению груди?</div>
+                      <div class="qa-block__answer-wrapper">
+                        <div class="qa-block__answer-content"><span>Ответ:</span>
+                          <p class="qa-block__answer">
+                             Стоимость операции составляет 235 000 р<br>Местная анестезия: 500 руб. Эндотрахеальный наркоз</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="page-qa__bottom">
+              <div class="main-question-block main-question-block_light">
+                <p class="section-title main-question-block__title">Задать вопрос доктору <span>ON–LINE</span></p>
+                <p class="main-question-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="main-question-block__btn"><a class="main-btn" href="">задать вопрос</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
+      <!--.main-form-block-->
+      <!--  h2.section-title Запись на приём-->
+      <!--  form.form-appointment-->
+      <!--    .main-input.main-input_name-->
+      <!--      input(type="text", placeholder="Имя")-->
+      <!--    .main-input.main-input_phone-->
+      <!--      input(type="tel", placeholder="Телефон")-->
+      <!---->
+      <!--    button.main-btn.main-btn_with-icon записаться на приём-->
+      <!--  p.main-form-block__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.-->
+      <!--include ./template/main-page.pug-->
+      <!--include ./template/page-contacts.pug-->
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -167,7 +433,7 @@
              создание сайта <span>PLATZKART</span></a></div>
       </div>
     </footer>
-    <div class="layout-menu" id="layout-menu">
+    <nav class="layout-menu" id="layout-menu">
       <div class="layout-menu__close">
         <button class="close-layout" type="button" id="close-layout-menu"></button>
       </div>
@@ -192,16 +458,15 @@
               <li class="layout-menu__item"><a href="">О хирурге</a></li>
               <li class="layout-menu__item"><a href="">Новости</a></li>
               <li class="layout-menu__item"><a href="">Отзывы</a></li>
-              <li class="layout-menu__item"><a href="">Политика </a></li>
+              <li class="layout-menu__item"><a href="">Политика</a></li>
               <li class="layout-menu__item"><a href="">Конфиденциальности</a></li>
             </ul>
           </div>
           <div class="layout-menu__section" data-section-menu="2">
-            <div class="layout-menu__section-title"> <span>Операции</span></div>
+            <div class="layout-menu__section-title"><span>Операции</span></div>
             <ul class="layout-menu__list">
               <li class="layout-menu__item"><a href="">Цены на операции</a></li>
-              <li class="layout-menu__item"><a href="">
-                   Выполняемые<br>операции</a>
+              <li class="layout-menu__item"><a href="">Выполняемые<br>операции</a>
                 <ul class="inner-submenu">
                   <li class="inner-submenu__item"><a href="">пластика груди</a></li>
                   <li class="inner-submenu__item"><a href="">пластика живота</a></li>
@@ -215,7 +480,7 @@
             </ul>
           </div>
           <div class="layout-menu__section" data-section-menu="3">
-            <div class="layout-menu__section-title"> <span>Пациентам</span></div>
+            <div class="layout-menu__section-title"><span>Пациентам</span></div>
             <ul class="layout-menu__list">
               <li class="layout-menu__item"><a href="">Запись на приём</a></li>
               <li class="layout-menu__item"><a href="">Вопрос ответ</a></li>
@@ -224,7 +489,7 @@
             </ul>
           </div>
           <div class="layout-menu__section" data-section-menu="4">
-            <div class="layout-menu__section-title"> <span>Полезное</span></div>
+            <div class="layout-menu__section-title"><span>Полезное</span></div>
             <ul class="layout-menu__list">
               <li class="layout-menu__item"><a href="">Первый визит</a></li>
               <li class="layout-menu__item"><a href="">Налоговые вычеты</a></li>
@@ -235,7 +500,7 @@
             </ul>
           </div>
           <div class="layout-menu__section layout-menu__section_contacts">
-            <div class="layout-menu__section-title"> <span>Контакты</span></div>
+            <div class="layout-menu__section-title"><span>Контакты</span></div>
             <div class="main-contacts">
               <div class="main-contacts__doctor"><span class="main-contacts__name">Владимир Борисович Карпюк</span><a class="main-contacts__item main-contacts__phone" href="tel: +7 918 157 83 46">+7 918 157 83 46</a><a class="main-contacts__item main-contacts__mail" href="mailto:vkarpyuk@mail.ru">vkarpyuk@mail.ru</a><a class="main-contacts__item main-contacts__inst" href="instagram.com/karpyuk_plastic_surgeon">karpyuk_plastic_surgeon</a></div>
               <div class="main-contacts__loc">
@@ -246,11 +511,10 @@
           </div>
         </div>
         <div class="layout-menu__copyright">
-          <div class="copyright"> <a href="" target="_blank">
-               создание сайта <span>PLATZKART</span></a></div>
+          <div class="copyright"><a href="" target="_blank">создание сайта<span>PLATZKART</span></a></div>
         </div>
       </div>
-    </div>
+    </nav>
     <div class="layout-search" id="layout-search">
       <div class="layout-search__close">
         <button class="close-layout" type="button" id="close-layout-search"></button>
@@ -264,8 +528,7 @@
           </form>
         </div>
         <div class="layout-search__copyright">
-          <div class="copyright"> <a href="" target="_blank">
-               создание сайта <span>PLATZKART</span></a></div>
+          <div class="copyright"><a href="" target="_blank">создание сайта<span>PLATZKART</span></a></div>
         </div>
       </div>
     </div>
@@ -296,9 +559,13 @@
         </div>
       </div>
     </div>
+    <div class="popup-thnx" id="popup-thnx" style="display: none">
+      <p class="popup-thnx__title">Спасибо</p>
+      <p class="popup-thnx__text">Мы вам перезвоним!</p>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-</html><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/app.js"></script>
+</html>
